@@ -1,0 +1,33 @@
+﻿@inherits WorldPanel
+
+<root>
+	<screenoverlay/>
+	<speed/>
+	<info/>
+	<pilotinfo/>
+	<chat/>
+	<outofboundsui/>
+	<scoreboard/>
+	<shiplisthint/>
+	<shiplist/>
+	<weapons/>
+	<nametags/>
+	<hitmarker/>
+	<killfeed/>
+	<playerkillfeed />
+</root>
+
+@code
+{
+	public override void Tick()
+	{
+		base.Tick();
+		Scale = 1f;
+		Position = Input.VR.LeftHand.Transform.Position;// + Input.VR.LeftHand.Transform.Rotation.Left * 8f;
+		Rotation = Input.VR.LeftHand.Transform.Rotation * new Angles(-90, 180, 0).ToRotation();
+		var wide = 1000;
+		var tall = 1000;
+		PanelBounds = new Rect(-wide / 2f, -tall / 2f, wide, tall);
+
+	}
+}
