@@ -1,0 +1,47 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using Sandbox.UI.Construct;
+@namespace Grubs
+@inherits WorldPanel
+
+<root>
+    <PlayerInfoPanel />
+    <TurnPanel />
+    <InventoryPanel />
+    <InputPanel />
+
+    @* Replace with proper menu *@
+    <GameStatePanel />
+</root>
+
+@code 
+{
+    public GrubsHudVR()
+    {
+        Game.AssertClient();
+        Game.RootPanel = this;
+
+        _ = new AimReticle();
+        _ = new NameTagManager();
+        _ = new GrubDamageManager();
+        AddChild<EnablePointerEvents>();
+    }
+
+    public override void Tick()
+    {
+        base.Tick();
+        Scale = 1f;
+        Position = Input.VR.LeftHand.Transform.Position;// + Input.VR.LeftHand.Transform.Rotation.Left * 8f;
+        Rotation = Input.VR.LeftHand.Transform.Rotation * new Angles(-90, 180, 0).ToRotation();
+        var wide = 1000;
+        var tall = 1000;
+        PanelBounds = new Rect(-wide / 2f, -tall / 2f, wide, tall);
+
+    }
+}
+
+<style>
+    GrubsHud {
+        pointer-events: none;
+    }
+</style>
