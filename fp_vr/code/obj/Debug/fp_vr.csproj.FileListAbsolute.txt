@@ -1,0 +1,5 @@
+E:\sboxaddons\fp_vr\code\obj\Debug\fp_vr.csproj.AssemblyReference.cache
+E:\sboxaddons\fp_vr\code\obj\Debug\fp_vr.GeneratedMSBuildEditorConfig.editorconfig
+E:\sboxaddons\fp_vr\code\obj\Debug\fp_vr.AssemblyInfoInputs.cache
+E:\sboxaddons\fp_vr\code\obj\Debug\fp_vr.AssemblyInfo.cs
+E:\sboxaddons\fp_vr\code\obj\Debug\fp_vr.csproj.CoreCompileInputs.cache

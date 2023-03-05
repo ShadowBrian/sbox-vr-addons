@@ -1,0 +1,14 @@
+
+Layer0
+{
+	shader "complex.vfx"
+
+	TextureColor "models/cockpits/materials/joystick/joystick_color.png"
+	TextureAmbientOcclusion "models/cockpits/materials/joystick/joystick_ao.png"
+	TextureNormal "models/cockpits/materials/joystick/joystick_normal.png"
+	TextureRoughness "models/cockpits/materials/joystick/joystick_rough.png"
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	TextureMetalness "models/cockpits/materials/joystick/joystick_metallic.png"
+
+}

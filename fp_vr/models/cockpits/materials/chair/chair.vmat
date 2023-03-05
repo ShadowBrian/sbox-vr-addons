@@ -1,0 +1,14 @@
+
+Layer0
+{
+	shader "complex.vfx"
+
+	TextureColor "models/cockpits/materials/chair/chair_color.png"
+	TextureAmbientOcclusion "models/cockpits/materials/chair/chair_ao.png"
+	TextureNormal "models/cockpits/materials/chair/chair_normal.png"
+	TextureRoughness "models/cockpits/materials/chair/chair_rough.png"
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	TextureMetalness "models/cockpits/materials/chair/chair_metallic.png"
+
+}

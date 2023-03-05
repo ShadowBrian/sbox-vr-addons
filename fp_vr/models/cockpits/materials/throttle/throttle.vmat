@@ -1,0 +1,14 @@
+
+Layer0
+{
+	shader "complex.vfx"
+
+	TextureColor "models/cockpits/materials/throttle/throttle_color.png"
+	TextureAmbientOcclusion "models/cockpits/materials/throttle/throttle_ao.png"
+	TextureNormal "models/cockpits/materials/throttle/throttle_normal.png"
+	TextureRoughness "models/cockpits/materials/throttle/throttle_rough.png"
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	TextureMetalness "models/cockpits/materials/throttle/throttle_metallic.png"
+
+}

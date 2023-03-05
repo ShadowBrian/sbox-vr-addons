@@ -1,0 +1,95 @@
+{
+  "SchemaVersion": 1,
+  "Name": null,
+  "Description": null,
+  "Root": {
+    "Guid": "21edd313-ab4c-49f3-8fbe-66aced1f4606",
+    "Class": "Cockpit",
+    "Entities": [
+      {
+        "Guid": "7de7515b-dc7c-4a5f-ad53-91fd17fc35f5",
+        "Class": "Interactable",
+        "Entities": [],
+        "Components": [],
+        "Keys": {
+          "Model": {
+            "Type": "Model",
+            "Value": "\u0022models/basic_joystick.vmdl\u0022"
+          },
+          "_name": {
+            "Value": "\u0022Joystick\u0022"
+          },
+          "_localposition": {
+            "Value": "\u002224.15,-2.1,4.6\u0022"
+          },
+          "_localrotation": {
+            "Value": "\u00220,0,0\u0022"
+          },
+          "_scale": {
+            "Value": "1"
+          },
+          "_tags": {
+            "Value": "\u0022\u0022"
+          },
+          "IsThrottle": {
+            "Type": "Boolean",
+            "Value": "false"
+          }
+        }
+      },
+      {
+        "Guid": "f1f1d330-811d-45df-8811-b5d01a339849",
+        "Class": "Interactable",
+        "Entities": [],
+        "Components": [],
+        "Keys": {
+          "Model": {
+            "Type": "Model",
+            "Value": "\u0022models/basic_throttle.vmdl\u0022"
+          },
+          "_name": {
+            "Value": "\u0022Throttle\u0022"
+          },
+          "_localposition": {
+            "Value": "\u002224,2.1,4.75\u0022"
+          },
+          "_localrotation": {
+            "Value": "\u00220,0,0\u0022"
+          },
+          "_scale": {
+            "Value": "1"
+          },
+          "_tags": {
+            "Value": "\u0022\u0022"
+          },
+          "IsThrottle": {
+            "Type": "Boolean",
+            "Value": "true"
+          }
+        }
+      }
+    ],
+    "Components": [],
+    "Keys": {
+      "Model": {
+        "Type": "Model",
+        "Value": "\u0022models/cockpits/cockpit1.vmdl\u0022"
+      },
+      "_name": {
+        "Value": "\u0022Root Entity\u0022"
+      },
+      "_localposition": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_localrotation": {
+        "Value": "\u00220,0,0\u0022"
+      },
+      "_scale": {
+        "Value": "1"
+      },
+      "_tags": {
+        "Value": "\u0022\u0022"
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Base/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Base.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Base.dll": {}
+        }
+      },
+      "grubs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/grubs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/grubs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Base/1.0.0": {
+      "type": "project",
+      "path": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj",
+      "msbuildProject": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj"
+    },
+    "grubs/1.0.0": {
+      "type": "project",
+      "path": "../../grubs/code/grubs.csproj",
+      "msbuildProject": "../../grubs/code/grubs.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "grubs >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\bri_a\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+      "projectName": "grubsvr",
+      "projectPath": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+      "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
+      "outputPath": "E:\\sboxaddons\\grubsvr\\code\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\bri_a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "E:\\sboxaddons\\grubs\\code\\grubs.csproj": {
+              "projectPath": "E:\\sboxaddons\\grubs\\code\\grubs.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
