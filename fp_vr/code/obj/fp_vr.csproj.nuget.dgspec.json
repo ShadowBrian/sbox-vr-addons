@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\sboxaddons\\fp_vr\\code\\fp_vr.csproj": {}
+    "E:\\sboxaddons\\VR Addons\\fp_vr\\code\\fp_vr.csproj": {}
   },
   "projects": {
-    "E:\\sboxaddons\\fp_vr\\code\\fp_vr.csproj": {
+    "E:\\sboxaddons\\VR Addons\\fp_vr\\code\\fp_vr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sboxaddons\\fp_vr\\code\\fp_vr.csproj",
+        "projectUniqueName": "E:\\sboxaddons\\VR Addons\\fp_vr\\code\\fp_vr.csproj",
         "projectName": "fp_vr",
-        "projectPath": "E:\\sboxaddons\\fp_vr\\code\\fp_vr.csproj",
+        "projectPath": "E:\\sboxaddons\\VR Addons\\fp_vr\\code\\fp_vr.csproj",
         "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-        "outputPath": "E:\\sboxaddons\\fp_vr\\code\\obj\\",
+        "outputPath": "E:\\sboxaddons\\VR Addons\\fp_vr\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

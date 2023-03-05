@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lKEa+pYnGbYPjTZWHMU5C9AAjRVPE8sDcEFhSz6v/VoYH//FTkJI+/Ig+KjRseAX04wc+FVwPJgj8VvmeagZWg==",
+  "dgSpecHash": "xVxEq6mW1lc/NIcRzH1RtI//7CfY4hp1l62se+Xaxyz8bMem7pJ2QZgvWfN1MR4EqNP9qd/ouQ6HmY0KFX2DuA==",
   "success": true,
-  "projectFilePath": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+  "projectFilePath": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

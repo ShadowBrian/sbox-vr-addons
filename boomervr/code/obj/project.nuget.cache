@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I+yMPH2rEyj8duANU2QYyEpLltW+5BVoecJPSej0cV3Fhuxw6DaJkTU8hu8wVc38x6IxhxTCorjeyCk5VQSPvg==",
+  "dgSpecHash": "vtrDtIcvHRMUnDz3Ov97iGcIQPjJH7IurQVnyaTwl9GgQBGdhHigWlZQefFhOy0AKSXRm4jzWXiBJcFxiNMIlw==",
   "success": true,
-  "projectFilePath": "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj",
+  "projectFilePath": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

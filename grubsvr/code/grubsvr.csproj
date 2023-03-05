@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
@@ -24,6 +24,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="GrubsHudVR.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Using Include="Sandbox.Internal.GlobalGameNamespace" Static="true" />
 	</ItemGroup>
 
@@ -35,7 +39,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<Analyzer Include="I:\SteamLibrary\steamapps\common\sbox\bin\managed\Sandbox.Generator.dll"/>
+		<Analyzer Include="I:\SteamLibrary\steamapps\common\sbox\bin\managed\Sandbox.Generator.dll" />
 		<Reference Include="I:\SteamLibrary\steamapps\common\sbox\bin\managed/Sandbox.System.dll" />
 		<Reference Include="I:\SteamLibrary\steamapps\common\sbox\bin\managed/Sandbox.Engine.dll" />
 		<Reference Include="I:\SteamLibrary\steamapps\common\sbox\bin\managed/Sandbox.Game.dll" />

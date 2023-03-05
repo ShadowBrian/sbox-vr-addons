@@ -35,8 +35,8 @@
     },
     "boomer/1.0.0": {
       "type": "project",
-      "path": "../../sbox-boomer/code/boomer.csproj",
-      "msbuildProject": "../../sbox-boomer/code/boomer.csproj"
+      "path": "../../../sbox-boomer/code/boomer.csproj",
+      "msbuildProject": "../../../sbox-boomer/code/boomer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj",
+      "projectUniqueName": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj",
       "projectName": "boomervr",
-      "projectPath": "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj",
+      "projectPath": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj",
       "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-      "outputPath": "E:\\sboxaddons\\boomervr\\code\\obj\\",
+      "outputPath": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

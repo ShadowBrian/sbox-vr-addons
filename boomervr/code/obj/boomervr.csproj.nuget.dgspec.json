@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj": {}
+    "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj": {}
   },
   "projects": {
-    "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj": {
+    "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj",
-        "projectName": "boomervr",
-        "projectPath": "E:\\sboxaddons\\boomervr\\code\\boomervr.csproj",
+        "projectUniqueName": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj",
+        "projectName": "boomer",
+        "projectPath": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj",
         "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-        "outputPath": "E:\\sboxaddons\\boomervr\\code\\obj\\",
+        "outputPath": "E:\\sboxaddons\\sbox-boomer\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj": {
-                "projectPath": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj"
+              "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj": {
+                "projectPath": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj": {
+    "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj",
-        "projectName": "boomer",
-        "projectPath": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj",
+        "projectUniqueName": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj",
+        "projectName": "boomervr",
+        "projectPath": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\boomervr.csproj",
         "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-        "outputPath": "E:\\sboxaddons\\sbox-boomer\\code\\obj\\",
+        "outputPath": "E:\\sboxaddons\\VR Addons\\boomervr\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj": {
-                "projectPath": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj"
+              "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj": {
+                "projectPath": "E:\\sboxaddons\\sbox-boomer\\code\\boomer.csproj"
               }
             }
           }

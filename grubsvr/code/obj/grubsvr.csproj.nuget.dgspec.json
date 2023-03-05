@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj": {}
+    "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj": {}
   },
   "projects": {
-    "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj": {
+    "E:\\sboxaddons\\grubs\\code\\grubs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
-        "projectName": "grubsvr",
-        "projectPath": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+        "projectUniqueName": "E:\\sboxaddons\\grubs\\code\\grubs.csproj",
+        "projectName": "grubs",
+        "projectPath": "E:\\sboxaddons\\grubs\\code\\grubs.csproj",
         "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-        "outputPath": "E:\\sboxaddons\\grubsvr\\code\\obj\\",
+        "outputPath": "E:\\sboxaddons\\grubs\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\sboxaddons\\grubs\\code\\grubs.csproj": {
-                "projectPath": "E:\\sboxaddons\\grubs\\code\\grubs.csproj"
+              "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj": {
+                "projectPath": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "E:\\sboxaddons\\grubs\\code\\grubs.csproj": {
+    "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\sboxaddons\\grubs\\code\\grubs.csproj",
-        "projectName": "grubs",
-        "projectPath": "E:\\sboxaddons\\grubs\\code\\grubs.csproj",
+        "projectUniqueName": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj",
+        "projectName": "grubsvr",
+        "projectPath": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj",
         "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-        "outputPath": "E:\\sboxaddons\\grubs\\code\\obj\\",
+        "outputPath": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj": {
-                "projectPath": "I:\\SteamLibrary\\steamapps\\common\\sbox\\addons\\base\\code\\Base.csproj"
+              "E:\\sboxaddons\\grubs\\code\\grubs.csproj": {
+                "projectPath": "E:\\sboxaddons\\grubs\\code\\grubs.csproj"
               }
             }
           }

@@ -35,8 +35,8 @@
     },
     "grubs/1.0.0": {
       "type": "project",
-      "path": "../../grubs/code/grubs.csproj",
-      "msbuildProject": "../../grubs/code/grubs.csproj"
+      "path": "../../../grubs/code/grubs.csproj",
+      "msbuildProject": "../../../grubs/code/grubs.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+      "projectUniqueName": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj",
       "projectName": "grubsvr",
-      "projectPath": "E:\\sboxaddons\\grubsvr\\code\\grubsvr.csproj",
+      "projectPath": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\grubsvr.csproj",
       "packagesPath": "C:\\Users\\bri_a\\.nuget\\packages\\",
-      "outputPath": "E:\\sboxaddons\\grubsvr\\code\\obj\\",
+      "outputPath": "E:\\sboxaddons\\VR Addons\\grubsvr\\code\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
