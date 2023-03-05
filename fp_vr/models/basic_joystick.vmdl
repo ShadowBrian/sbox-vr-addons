@@ -17,6 +17,10 @@
 								from = "joystick.vmat"
 								to = "models/cockpits/materials/joystick/joystick.vmat"
 							},
+							{
+								from = "citizen_skin.vmat"
+								to = "models/hands/materials/jank_glove.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -44,6 +48,22 @@
 							[
 								"joystick_articulated",
 							]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						filename = "models/hands/hand_basic_trigger.fbx"
+						import_translation = [ 13.0, -1.5, -3.0 ]
+						import_rotation = [ 25.0, -14.0, 0.0 ]
+						import_scale = 0.1
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = "joint2"
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
 						}
 					},
 				]
@@ -203,6 +223,31 @@
 						collision_tags = "solid"
 						radius = 0.556777
 						center = [ 1.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "BodyGroupList"
+				children = 
+				[
+					{
+						_class = "BodyGroup"
+						name = "hand"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								meshes = [  ]
+							},
+							{
+								_class = "BodyGroupChoice"
+								meshes = 
+								[
+									"unnamed_2",
+								]
+							},
+						]
+						hidden_in_tools = false
 					},
 				]
 			},

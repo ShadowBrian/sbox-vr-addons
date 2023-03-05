@@ -1,0 +1,14 @@
+
+Layer0
+{
+	shader "complex.vfx"
+
+	TextureColor "models/hands/materials/citizen_skin_color.png"
+	TextureAmbientOcclusion "models/hands/materials/citizen_skin_ao.png"
+	TextureNormal "models/hands/materials/citizen_skin_normal.png"
+	TextureRoughness "models/hands/materials/citizen_skin_rough.png"
+	F_METALNESS_TEXTURE 1
+	F_SPECULAR 1
+	TextureMetalness "models/hands/materials/citizen_skin_metallic.png"
+
+}
