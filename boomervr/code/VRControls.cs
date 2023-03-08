@@ -4,7 +4,7 @@ using Sandbox.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Facepunch.Boomer.UI;
 namespace Facepunch.Boomer;
 
 public partial class VRControls
@@ -60,6 +60,12 @@ public partial class VRControls
     {
         if (VR.Enabled)
         {
+            if (!ReplacedUI)
+            {
+                new HudVR();
+                ReplacedUI = true;
+            }
+
             if (Rotated && Input.VR.RightHand.Joystick.Value.x > -0.5f && Input.VR.RightHand.Joystick.Value.x < 0.5f)
             {
                 Rotated = false;
@@ -81,7 +87,7 @@ public partial class VRControls
             }
 
             Vector2 move = new Vector2(Input.VR.LeftHand.Joystick.Value.y, MathF.Round(-Input.VR.LeftHand.Joystick.Value.x));
-            Input.AnalogMove = Input.VR.Head.Rotation * (Input.VR.RightHand.Transform.Rotation * new Angles(45, 0, 0).ToRotation()).Inverse * move;
+            Input.AnalogMove = Input.VR.Head.Rotation * (Game.LocalPawn.Rotation).Inverse * move;
 
             Input.SetButton(InputButton.Jump, Input.VR.RightHand.ButtonA.IsPressed);
 
