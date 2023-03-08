@@ -1,0 +1,25 @@
+{
+  "Title": "VR controls",
+  "Type": "addon",
+  "Org": "shadb",
+  "Ident": "mazing_vr",
+  "Tags": "",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": null,
+  "HasCode": true,
+  "CodePath": "/code/",
+  "Metadata": {
+    "ParentPackage": "facepunch.mazing",
+    "CsProjName": "",
+    "PrimaryAsset": "",
+    "PhysicsMins": "-1,-1,-1",
+    "PhysicsMaxs": "1,1,1",
+    "RenderMins": "-1,-1,-1",
+    "RenderMaxs": "-1,-1,-1",
+    "Summary": "Basic VR controls for Mazing",
+    "Description": "",
+    "Public": true
+  }
+}
