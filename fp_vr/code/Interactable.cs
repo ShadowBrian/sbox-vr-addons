@@ -75,7 +75,7 @@ namespace Sandbox
 					}
 				}
 			}
-			else
+			else if (Vector3.DistanceBetween(handPosition, GetBoneTransform(1).Position + Vector3.Up * 0.5f) > 3f)
 			{
 				gripped = false;
 			}

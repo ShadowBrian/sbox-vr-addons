@@ -96,16 +96,56 @@ public partial class VRControls
 		}
 	}
 
-	public static Transform RotateTransform(Transform trans)
+	/*public static Transform RotateTransform(Transform trans)
 	{
 		Transform RotatedTransform = trans;
+
+
 		Vector3 LocalizedPosition = trans.Position - VR.Anchor.Position;
-		Angles AnchorAngles = new Angles(VR.Anchor.Rotation.Angles().pitch * 0.1f, 0, VR.Anchor.Rotation.Angles().roll);
-		//Vector3 RotatedPosition = LocalizedPosition * AnchorAngles.ToRotation();
-		//RotatedTransform.Position += VR.Anchor.Rotation.Forward * VR.Anchor.Rotation.Angles().pitch * 0.125f;
-		//RotatedTransform.Position += VR.Anchor.Rotation.Up * VR.Anchor.Rotation.Angles().pitch * 0.005f;
-		//RotatedTransform.Position += RotatedPosition;
+
+		LocalizedPosition *= new Angles(0, VR.Anchor.Rotation.Inverse.Angles().yaw, 0).ToRotation();
+
+		Vector3 RotatedPosition = LocalizedPosition;
+
+		//RotatedPosition = RotatedPosition * VR.Anchor.Rotation;
+
+		RotatedPosition = VR.Anchor.PointToWorld(RotatedPosition);
+
+		RotatedTransform.Position = RotatedPosition;
+
+
 		return RotatedTransform;
+	}*/
+
+	public static Transform RotateTransform(Transform handTransform)
+	{
+		Transform correctedTransform = handTransform;
+
+		Vector3 localizedPosition = handTransform.Position - VR.Anchor.Position;
+
+		// Get the VR.Anchor's rotation without the pitch and roll components
+		Rotation anchorYaw = new Angles(0, VR.Anchor.Rotation.Angles().yaw, 0).ToRotation();
+
+		// Get the pitch and roll components of the VR.Anchor's rotation
+		float anchorPitch = VR.Anchor.Rotation.Angles().pitch;
+		float anchorRoll = VR.Anchor.Rotation.Angles().roll;
+
+		Log.Info(anchorPitch);
+
+		// Create a rotation quaternion that applies the pitch and roll corrections
+		Rotation pitchRollCorrection = new Angles(-anchorPitch, 0, -anchorRoll).ToRotation();
+
+		// Rotate the localized position by the pitch and roll correction
+		Vector3 rotatedPosition = pitchRollCorrection * localizedPosition;
+
+		rotatedPosition *= VR.Anchor.Rotation;
+
+		// Convert the rotated position back to world space using the VR.Anchor's yaw rotation
+		Vector3 correctedPosition = VR.Anchor.Position + anchorYaw * rotatedPosition;
+
+		correctedTransform.Position = correctedPosition;
+
+		return correctedTransform;
 	}
 
 	public static Cockpit activeCockpit;
@@ -128,7 +168,7 @@ public partial class VRControls
 			activeCockpit = Cockpit.FromPrefab("prefabs/cockpit1.prefab");
 			activeCockpit.SetParent(Game.LocalPawn);
 			activeCockpit.LocalPosition = Vector3.Zero;
-			activeCockpit.LocalRotation = Rotation.Identity;
+			activeCockpit.LocalRotation = Rotation.Identity;// * new Angles(20f, 20f, 0).ToRotation();
 			foreach (var item in activeCockpit.Children)
 			{
 				if (item is Interactable stick && stick.IsThrottle)
