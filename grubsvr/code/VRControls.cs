@@ -11,6 +11,8 @@ public partial class VRControls
 
     public static bool ReplacedUI;
 
+    public static VROverlayPanel VRMenu;
+
     [Event.Client.BuildInput]
     public static void BuildInput()
     {
@@ -19,12 +21,24 @@ public partial class VRControls
             VR.Scale = 5f;
             VR.Anchor = new Transform(Camera.Position - Vector3.Up * 64f * VR.Scale, Rotation.LookAt(Vector3.Left));
 
+
             if (!ReplacedUI)
             {
-                Game.RootPanel.Delete();
-                new GrubsHudVR();
+                //Game.RootPanel.Delete();
+                //new GrubsHudVR();
+                VRMenu = new VROverlayPanel(Game.RootPanel)
+                {
+                    Transform = new Transform(Vector3.Forward * 40.0f + Vector3.Up * 60.0f),
+                    Width = 40.0f,
+                    Curvature = 0.2f,
+                };
                 ReplacedUI = true;
             }
+
+            /*var trans = new Transform(Vector3.Zero);
+            trans.Position += Vector3.Forward * 40.0f + Vector3.Up * 60.0f;
+
+            VRMenu.Transform = trans;*/
 
             if (Game.Clients.Count >= GrubsConfig.MinimumPlayers && (Game.IsServerHost && Game.IsClient) && GamemodeSystem.Instance is FreeForAll ffa && ffa.TerrainReady && !ffa.Started)
             {

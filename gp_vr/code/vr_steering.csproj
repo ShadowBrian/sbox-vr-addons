@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<AssemblyName>grubsvr</AssemblyName>
-		<PackageId>grubsvr</PackageId>
+		<AssemblyName>vr_steering</AssemblyName>
+		<PackageId>vr_steering</PackageId>
 		<LangVersion>11</LangVersion>
 		<NoWarn>1701;1702;1591;</NoWarn>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -29,7 +29,7 @@
 
   <PropertyGroup>
 	<OutputPath>I:\SteamLibrary\steamapps\common\sbox/.vs/output/</OutputPath>
-	<DocumentationFile>I:\SteamLibrary\steamapps\common\sbox/.vs/output/grubsvr.xml</DocumentationFile>
+	<DocumentationFile>I:\SteamLibrary\steamapps\common\sbox/.vs/output/vr_steering.xml</DocumentationFile>
 	<RootNamespace>Sandbox</RootNamespace>
 	<Nullable>disable</Nullable>
   </PropertyGroup>
@@ -45,7 +45,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-		<ProjectReference Include="E:\sboxaddons\grubs\code\grubs.csproj" />
+		<Reference Include="I:\SteamLibrary\steamapps\common\sbox\.source2\references\eagleone.grandprix.15485.dll" />
 
   </ItemGroup>
 
